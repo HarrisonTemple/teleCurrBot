@@ -13,6 +13,3 @@ class Client:
         except (KeyError, TypeError):
             raise Ex.ProviderConversionError(f"unable to retrieve rate for {src} {dst}")
 
-
-if __name__ == "__main__":
-    print(Client.request_pair_rate("RUB", "USD"))
